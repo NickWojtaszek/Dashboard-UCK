@@ -1,2 +1,11 @@
 [phases.setup]
 nixPkgs = ['nodejs_20']
+
+[phases.install]
+cmds = ['echo "Skipping npm ci - will use npm install in build phase"']
+
+[phases.build]
+cmds = ['npm install --legacy-peer-deps', 'npm run build']
+
+[start]
+cmd = 'npm run serve'
