@@ -1,0 +1,39 @@
+.app-list {
+  background-color: #151a2d;
+  border: 1px solid #1e2540;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.app-list-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 16px 24px;
+  background-color: #1e2540;
+  border-bottom: 1px solid #2a3150;
+}
+
+.list-col {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b92b0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.app-list-body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .app-list-header {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .col-type,
+  .col-version {
+    display: none;
+  }
+}

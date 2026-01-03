@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm start)",
+      "Bash(npm run validate:*)",
+      "Bash(dir /B)",
+      "Bash(npm run build:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(if exist \"c:\\\\Users\\\\mikol_5j7kx3s\\\\Desktop\\\\Dashboard\\\\src\\\\lib\" rmdir /s /q \"c:\\\\Users\\\\mikol_5j7kx3s\\\\Desktop\\\\Dashboard\\\\src\\\\lib\")",
+      "Bash(timeout 30 npm start:*)",
+      "Bash(cat:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(dir /B node_modules)",
+      "Bash(ls:*)",
+      "Bash(git remote add:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

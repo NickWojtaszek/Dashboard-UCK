@@ -1,0 +1,63 @@
+.sync-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.sync-status.loading {
+  background-color: #2563eb20;
+  color: #3b82f6;
+}
+
+.sync-status.synced {
+  background-color: #10b98120;
+  color: #10b981;
+}
+
+.sync-status.offline {
+  background-color: #f5971620;
+  color: #f59716;
+}
+
+.sync-status.local {
+  background-color: #8b92b020;
+  color: #8b92b0;
+}
+
+.sync-spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+  font-size: 14px;
+}
+
+.sync-icon {
+  font-size: 14px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 640px) {
+  .sync-status {
+    padding: 6px 10px;
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .sync-icon,
+  .sync-spinner {
+    font-size: 12px;
+  }
+}
